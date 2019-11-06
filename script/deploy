@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh root@murbs.mak.ac.ug <<EOF
+ cd ~/nodejs/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
